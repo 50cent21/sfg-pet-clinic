@@ -6,6 +6,9 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>pet-clinic-data</artifactId>
+  <properties>
+     <spring-boot.repackage.skip>true</spring-boot.repackage.skip>
+  </properties>
   <dependencies>
     <dependency>
 	   <groupId>org.springframework.boot</groupId>
@@ -45,15 +48,6 @@
 				 </goals>
 				 </execution>
 				</executions>
-				<configuration>
-				    <skip>true</skip>
-					<excludes>
-						<exclude>
-							<groupId>org.projectlombok</groupId>
-							<artifactId>lombok</artifactId>
-						</exclude>
-					</excludes>
-				</configuration>
 			</plugin>
 		</plugins>
 	</build>

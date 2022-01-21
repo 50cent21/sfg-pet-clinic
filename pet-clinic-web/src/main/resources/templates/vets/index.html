@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="eng" xmlns:th="http://www.thymeleaf.org">
+<html lang="eng" xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'vets')}">
 <head>
     <meta charset="utf-8">
     <title>List of Vets</title>
 </head>
 <body>
 <!-- /* @thmesVar id="vet" tpye="guru.springframework.sfgpetclinic.model.Vet*/-->
-     <h1 th:text="'List of Vets'">Index Page</h1>
+     <h2 th:text="'List of Vets'">Index Page</h2>
      
-     <table>
+     <table class="table table-striped">
       <thead>
        <tr>
          <th>Id</th>

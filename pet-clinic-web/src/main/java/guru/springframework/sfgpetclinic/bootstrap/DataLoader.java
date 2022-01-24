@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 import guru.springframework.sfgpetclinic.model.Owner;
 import guru.springframework.sfgpetclinic.model.Pet;
 import guru.springframework.sfgpetclinic.model.PetType;
-import guru.springframework.sfgpetclinic.model.Specialty;
+import guru.springframework.sfgpetclinic.model.Speciality;
 import guru.springframework.sfgpetclinic.model.Vet;
 import guru.springframework.sfgpetclinic.services.OwnerService;
 import guru.springframework.sfgpetclinic.services.PetTypeService;
@@ -56,17 +56,17 @@ public class DataLoader implements CommandLineRunner{
 		
 		PetType savedCatPetType = petTypeService.save(cat);
 		
-		Specialty radiology = new Specialty();
+		Speciality radiology = new Speciality();
 		radiology.setDescription("Radiology");
-		Specialty savedRadiology = specialtyService.save(radiology);
+		Speciality savedRadiology = specialtyService.save(radiology);
 		
-		Specialty surgery = new Specialty();
+		Speciality surgery = new Speciality();
 		surgery.setDescription("Surgery");
-		Specialty savedSurgery = specialtyService.save(surgery);
+		Speciality savedSurgery = specialtyService.save(surgery);
 		
-		Specialty dentistry = new Specialty();
+		Speciality dentistry = new Speciality();
 		dentistry.setDescription("Dentistry");
-		Specialty savedDentistry = specialtyService.save(dentistry);
+		Speciality savedDentistry = specialtyService.save(dentistry);
 		
 		Owner owner1 = new Owner();
 		owner1.setFirstName("Michel");

@@ -56,7 +56,7 @@ public class OwnerController {
 			owner.setLastName(""); //empty string signifies broadest possible search
 		}
 		
-		List<Owner> results = ownerService.findAllByLastNameLike(owner.getLastName());
+		List<Owner> results = ownerService.findAllByLastNameLike("%" + owner.getLastName() + "%");
 		
 		if(results.isEmpty()) {
 			result.rejectValue("lastName", "notFound", "not found");
